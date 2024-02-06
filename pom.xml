@@ -108,6 +108,7 @@
 
 
 	<build>
+		<finalName>world-site</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

@@ -6,7 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class SiteApplicationController {
 
-	@RequestMapping("/")
+	public SiteApplicationController() {
+		
+	}
+
+	@RequestMapping({"/"})
 	public String index(){
 		System.out.println("Carregando os produtos");
 		return "helloworld";
@@ -14,9 +18,9 @@ public class SiteApplicationController {
 	
 
 	@RequestMapping("/home")
-	public void home() {
+	public String home() {
 		// aqui ainda vamos carregar os produtos.
-		System.out.println("Carregando os produtos");
+		return "helloworld";
 	}
 
 
